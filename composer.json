@@ -1,0 +1,25 @@
+{
+    "name": "jmdistributions/jm-validator",
+    "description": "General validator",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jmdistributions\\JmValidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jmdistributions\\Tests\\JmValidator\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rosendo21",
+            "email": "rosendo.cruz@jm-distributions.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^12.3"
+    }
+}
