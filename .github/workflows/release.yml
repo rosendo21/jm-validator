@@ -1,0 +1,25 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+jobs:
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          body: |
+            🚀 Nueva versión ${{ github.ref_name }}
+            - Descripción de los cambios aquí
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
