@@ -37,12 +37,12 @@ class JmValidatorTest extends TestCase
             [
                 [
                     'email' => 'juanito@email.com',
-                    'password' => 'test12'
+                    'password' => 'test12',
                 ],  [
                     'email' => ['required', 'email'],
-                    'password' => ['required', 'max:8']
+                    'password' => ['required', 'max:8'],
                 ],
-            ]
+            ],
         ];
     }
 
@@ -52,12 +52,12 @@ class JmValidatorTest extends TestCase
             [
                 [
                     'email' => 'email.com',
-                    'password' => 'test123'
+                    'password' => 'test123',
                 ],  [
                     'email' => ['required', 'email'],
-                    'password' => ['required', 'max:8']
+                    'password' => ['required', 'max:8'],
                 ],
-            ]
+            ],
         ];
     }
 

@@ -32,7 +32,7 @@ class JmValidator
         }
 
         $this->errors = $this->errosData;
-        return count($this->errosData) == 0;
+        return count($this->errosData) === 0;
     }
 
     public function getErrors(): array
